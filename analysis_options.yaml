@@ -9,6 +9,12 @@
 # packages, and plugins designed to encourage good coding practices.
 include: package:flutter_lints/flutter.yaml
 
+# Formatter configuration (see CONVENTION.md §2 Code Formatting)
+# - Indentation is 2 spaces by default in Dart formatter
+# - Max line length: 100 characters
+formatter:
+  line-length: 100
+
 linter:
   # The lint rules applied to this project can be customized in the
   # section below to disable rules from the `package:flutter_lints/flutter.yaml`
@@ -21,6 +27,16 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
+    # Enforce import grouping and alphabetical sorting:
+    # 1) dart:* core libraries
+    # 2) external packages
+    # 3) local project files
+    directives_ordering: true
+
+    # Prefer relative imports for local project files to align with the
+    # "local project files" import group in CONVENTION.md.
+    prefer_relative_imports: true
+
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
 
