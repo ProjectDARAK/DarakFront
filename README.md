@@ -7,6 +7,10 @@ This repository contains the Flutter client (Frontend) for Darak.
 - API Server (Spring Boot/Kotlin): [Link to API server repository] (TBD)
 - Flutter Client (this repo): cross‑platform app for Android, iOS, Web, macOS, Windows, and Linux
 
+### Issue Tracker
+- [GitHub Issues](https://github.com/ProjectDARAK/DarakDocumentation/issues)
+- [Security vulnerability report](https://github.com/ProjectDARAK/DarakFront/security)
+
 ## Key Features
 
 - User Management
